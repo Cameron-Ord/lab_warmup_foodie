@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import TestingPage from '@/views/TestingPage.vue'
+import ClientHomePage from '@/views/ClientHomePage.vue'
 
 Vue.use(VueRouter)
 
@@ -37,6 +38,36 @@ const routes = [
   
   ]
   },
+  {
+    path: `/signup`,
+
+    component: ClientHomePage,
+
+    name: `homepage`,
+
+    meta: [{
+
+      title: `home-page`
+
+    },
+
+    {
+
+      name: `description`,
+
+      content: `welcome to the home page`
+
+    },
+    {
+
+      name: `author`,
+
+      content: `Cameron Ord`
+
+    },
+  
+  ]
+  }
 
 
 
